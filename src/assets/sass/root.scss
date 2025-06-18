@@ -27,10 +27,9 @@
          --navBg: #fff;
 
    
-        /* 13px - 16px */
-        --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+ --topperFontSize: clamp(1.5rem, 2.1vw, 3rem);
         /* 31px - 49px */
-        --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+        --headerFontSize: clamp(2.5375rem, 3.9vw, 4.0625rem);
         --bodyFontSize: 1rem;
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 2rem;
@@ -61,27 +60,29 @@
         padding: 0;
     }
 
+    // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
     .cs-topper {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-family: "Tenor Sans", Arial, sans-serif;
         font-size: var(--topperFontSize);
         line-height: 1.2em;
-        text-transform: uppercase;
-        text-align: inherit;
-        letter-spacing: 0.1em;
         font-weight: 700;
         color: var(--primary);
-        margin-bottom: 0.25rem;
-        display: block;
+        text-align: inherit;
     }
 
     .cs-title {
-        font-size: var(--headerFontSize);
-        font-weight: 900;
-        line-height: 1.2em;
-        text-align: inherit;
-        max-width: 43.75rem;
-        margin: 0 0 1rem 0;
-        color: var(--headerColor);
         position: relative;
+        margin: 0 0 1rem 0;
+        max-width: 43.75rem;
+        font-size: var(--headerFontSize);
+        line-height: 1.2em;
+        font-weight: 700;
+        color: var(--headerColor);
+        text-align: inherit;
+        font-family: "Tenor Sans", Arial, sans-serif;
+        
     }
 
     .cs-text {
