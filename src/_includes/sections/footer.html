@@ -2,79 +2,366 @@
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="cs-footer-275">
-    <div class="cs-container">
-        <!-- Logo Group -->
-        <div class="cs-logo-group">
-            <a aria-label="go back to home" class="cs-logo" href="/">
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo-light.svg" alt="logo" width="240" height="32">
-            </a>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur pellentesque dignissim sed amet.
-            </p>
-            <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.socials.instagram }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
-                </a>
+<!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+
+<style>
+    /*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-footer-1763 {
+    padding: var(--sectionPadding);
+
+    padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
+    /* change this to match the color of the section above the footer */
+    background-color: #fff;
+    overflow: hidden;
+    /* 30px - 50px */
+    position: relative;
+    z-index: 1;
+  }
+  #cs-footer-1763 .cs-card-group {
+    /* reset on tablet */
+    max-width: 34.375rem;
+    margin: 30px auto;
+    /* 60px - 100px*/
+    padding: 0 0 clamp(3.75rem, 7vw, 6.25rem) 0;
+    display: grid;
+    /* 20px - 58px */
+    gap: clamp(1.25rem, 4vw, 3.625rem);
+  }
+  #cs-footer-1763 .cs-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  #cs-footer-1763 .cs-picture {
+    padding: 1.5rem;
+    background-color:var(--primary);
+    display: block;
+    border-radius: 995px;
+  }
+  #cs-footer-1763 .cs-icon {
+    width: 2rem;
+    height: auto;
+    display: block;
+  }
+  #cs-footer-1763 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #cs-footer-1763 .cs-card-info {
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #cs-footer-1763 .cs-container {
+    width: 100%;
+    /* reset on tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 32px - 48px */
+    gap: clamp(2rem, 7vw, 3rem);
+  }
+  #cs-footer-1763 .cs-logo-group {
+    /* takes up all the space, lets the other ul's wrap below it */
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+  }
+  #cs-footer-1763 .cs-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 0 1rem 0;
+    display: block;
+  }
+  #cs-footer-1763 .cs-text {
+    max-width: 44rem;
+    /* 24px - 40px */
+    margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+    opacity: 0.8;
+  }
+  #cs-footer-1763 .cs-logo-img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+  }
+  #cs-footer-1763 .cs-contact {
+    display: grid;
+    gap: 2rem;
+  }
+  #cs-footer-1763 .cs-topper {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  #cs-footer-1763 .cs-contact-link {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--headerColor);
+  }
+  #cs-footer-1763 .cs-header {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.5em;
+    /* 16px - 24px */
+    margin: 0 0 clamp(1rem, 4vw, 1.5rem) 0;
+    color: var(--headerColor);
+    display: block;
+    position: relative;
+    font-family: "Tenor Sans";
+  }
+  #cs-footer-1763 .cs-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #cs-footer-1763 .cs-li {
+    list-style: none;
+  }
+  #cs-footer-1763 .cs-link {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--bodyTextColor);
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    transition: color 0.3s;
+  }
+  #cs-footer-1763 .cs-link:hover {
+    color: var(--primaryLight);
+  }
+  #cs-footer-1763 .cs-bottom {
+    width: 100%;
+    max-width: 80rem;
+    /* 60px - 80px */
+    margin: clamp(3.75rem, 7vw, 5rem) auto 0;
+    padding-top: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  #cs-footer-1763 .cs-credit,
+  #cs-footer-1763 .cs-bottom-link,
+  #cs-footer-1763 .cs-credit-link {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--bodyTextColor);
+  }
+  #cs-footer-1763 .cs-credit {
+    width: 100%;
+  }
+  #cs-footer-1763 .cs-credit-link {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+  }
+  #cs-footer-1763 .cs-credit-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-1763 .cs-bottom-links {
+    width: 100%;
+    display: flex;
+  }
+  #cs-footer-1763 .cs-bottom-link {
+    display: flex;
+    align-items: center;
+  }
+  #cs-footer-1763 .cs-bottom-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-1763 .cs-bottom-link:last-of-type:before {
+    /* separator */
+    content: "";
+    width: 1px;
+    height: 0.875rem;
+    margin: 0 0.75rem;
+    background: currentColor;
+    opacity: 1;
+    display: block;
+  }
+  #cs-footer-1763 .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 9rem;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  #cs-footer-1763 .cs-light {
+    display: block;
+  }
+  #cs-footer-1763 .cs-dark {
+    display: none;
+  }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #cs-footer-1763 .cs-card-group {
+    max-width: 80rem;
+  }
+  #cs-footer-1763 .cs-container {
+    padding: var(--sectionPadding);
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    max-width: 80rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #cs-footer-1763 .cs-logo-group {
+    grid-column: span 12;
+  }
+  #cs-footer-1763 .cs-ul-wrapper {
+    grid-column: span 4;
+  }
+  #cs-footer-1763 .cs-contact {
+    
+    grid-column: span 12;
+  }
+  #cs-footer-1763 .cs-table {
+    grid-column: span 12;
+  }
+  #cs-footer-1763 .cs-bottom {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  #cs-footer-1763 .cs-credit {
+    text-align: left;
+  }
+  #cs-footer-1763 .cs-bottom-links {
+    justify-content: flex-end;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cs-footer-1763 .cs-card-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #cs-footer-1763 .cs-card {
+    grid-column: span 4;
+  }
+  #cs-footer-1763 .cs-logo-group {
+    grid-column: span 4;
+  }
+  #cs-footer-1763 .cs-ul-wrapper {
+    grid-column: span 4;
+  }
+  #cs-footer-1763 .cs-contact {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+  }
+}
+                                
+</style>
+
+<footer id="cs-footer-1763">
+
+
+    <!--Contact Info-->
+    <div class="cs-card-group" >
+
+
+
+        
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Location</h3>
+                <span class="cs-card-info">
+                    
+                   14350 Eureka, Southgate, MI
+                </span>
             </div>
         </div>
-        <!-- Links -->
-        <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Sitemap</span>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Home</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/about/">About</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/reviews/">Reviews</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/blog/">Blog</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/contact/">Contact</a>
-            </li>
-        </ul>
-        <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Projects</span>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/project-one/">Project One</a>
-            </li>
-            <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/project-two/">Project Two</a>
-            </li>
-        </ul>
-        <!-- Contact Info -->
-        <ul class="cs-contact">
-            <li class="cs-nav-li">
-                <span class="cs-header">Contact</span>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-            </li>
-        </ul>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Available 24/7</h3>
+                <span class="cs-card-info">Client satisfaction over everything.
+                  </span>
+               
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Contact Us</h3>
+                <a href="tel:{{client.phoneForTel}}" class="cs-card-info">{{client.phoneFormatted}} </a>
+             
+            </div>
+        </div>
+        <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+        <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+    </div>
+    <div class="cs-container" style="padding-top: 30px;">
+        <!-- Logo Group -->
+
+   
+        <div class="cs-contact">
+            <div class="cs-contact-info">
+                <span class="cs-header">Follow Us</span>
+                {% include 'components/social-links.html' %}
+            </div>
+         <DIV> <a class="cs-button-solid" href="#top" style="max-width: 200px;">Scroll To Top</a></DIV>
+       
+        </div>
+      
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright - <a href="/" class="cs-credit-link" target="_blank">{{client.name}}</a>
+        </span>
+        <div class="cs-bottom-links">
+          <STYLE>
+            .credit {color:white; text-align: left;}
+            .gandalfpill {border:.5px solid #eee; transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
+        .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
+        .gandalfpill:hover {box-shadow:2px 2px #FFF; background-color: black;  transform: translateY(-5px); transition: all ease .2s; ;}
+        .back2top {font-size:2px}
+        </STYLE>
+        <div class="credit">
+            <span style="color: black; font-size: 12px;">Website by</span>
+           
+            <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
+        </div>
+        </div>
     </div>
 </footer>
+                                

@@ -1,0 +1,224 @@
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+
+<style>
+    /*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-567 {
+        padding: var(--sectionPadding);
+    }
+    #reviews-567 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #reviews-567 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 32.625rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #reviews-567 .cs-card-group {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.5vw, 1.15rem);
+    }
+    #reviews-567 .cs-item {
+        list-style: none;
+        max-width: 39.375rem;
+        /* 32px - 60px top & bottom */
+        /* 16px - 48px left & right */
+        padding: clamp(2rem, 6.15vw, 3.75rem) clamp(1rem, 4.15vw, 3rem);
+        background-color: #f1f1f4;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+    #reviews-567 .cs-stars {
+        /* 169px - 189px */
+        width: clamp(10.5625rem, 20vw, 11.8125rem);
+        height: auto;
+        /* 20px - 24px */
+        margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
+        display: block;
+    }
+    #reviews-567 .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        /* 40px - 64px */
+        margin-bottom: clamp(2.5rem, 8vw, 4rem);
+        color: var(--bodyTextColor);
+    }
+    #reviews-567 .cs-flex-group {
+        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+        margin-top: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    #reviews-567 .cs-profile {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        /* clips image corners to make circle */
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+    #reviews-567 .cs-profile img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+    }
+    #reviews-567 .cs-name {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin: 0 0 0.5rem 0;
+        color: var(--headerColor);
+        font-family: 'Tenor Sans';
+        display: block;
+    }
+    #reviews-567 .cs-job {
+        /* 13px - 16px */
+        font-size: clamp(0.8125rem, 1.6vw, 1rem);
+        line-height: 1.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #reviews-567 .cs-container {
+        max-width: 80rem;
+    }
+    #reviews-567 .cs-card-group {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    #reviews-567 .cs-item {
+        width: clamp(38.5%, 46.5vw, 47.5%);
+    }
+    #reviews-567 .cs-item:last-of-type {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #reviews-567 .cs-item:last-of-type .cs-item-text {
+        text-align: center;
+        max-width: 54.375rem;
+    }
+}
+/* Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+ 
+}
+
+                                
+</style>
+
+<section id="reviews-567">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">What Our Clients Say</h2>
+  
+        </div>
+        <ul class="cs-card-group">
+
+            
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+                  I will recommend Victoria a million times. Her and her team went above and beyond to help get my family our first home. Once we were set on a house she made the process of getting it seem so effortless. We called our house our HOME in just a few short weeks and she went out of her way to help us with a downpayment assistance program and we only had to bring $900 to the table! She had so much patience when I asked a million questions and you can just tell she truly cares about her clients. Victoria is an all-around blessing to work with.                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="/assets/svgs/google.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        Emily Lukawski
+                        <a target="_blank" href="https://g.co/kgs/8EJwmSS" class="cs-job">5 Star Google Review</a>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+                 “Victoria and her team are the highest quality and caliber of realtors out there! We bought our 2nd home and sold our 1st home with Victoria. She listened to what we wanted in our dream home and exceeded our expectations! If you’re a first-time buyer, veteran homeowner, or looking at your options, Victoria is perfect for you!
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="/assets/svgs/google.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                      Lauren Muray
+                        <a target="_blank" href="https://g.co/kgs/oTGsTk8" class="cs-job">5 Star Google Review</a>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+               Amazing response, rabid negotiator, and a tireless work ethic. As a former mortgage loan officer who worked with a solid stable of realtors I can tell you, from an expert perspective, you will NOT find a stronger realtor. She was even able to pair us with a mortgage broker for a more favorable loan program than we originally had. Think about that for a second. I am a mortgage loan expert, and my realtor used her contacts to help ME find a more favorable deal. Not to mention, she was able to win the deal with us having the second highest offer, and STILL GOT CONCESSIONS. Whether you’re buying or selling, Victoria is the right realtor to take you to the closing table.
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="/assets/svgs/google.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                      Shawn Andre
+                        <a target="_blank" href="https://maps.app.goo.gl/QD9oZ6xnuGMvWa5x9" class="cs-job">5 Star Google Review</a>
+                    </span>
+                </div>
+            </li>
+    
+        </ul>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+          <a href="" class="cs-button-solid">Read More</a>
+    </div>
+</section>
+                                
