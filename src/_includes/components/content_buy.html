@@ -50,7 +50,7 @@
     }
     #content-page-1401 {
         padding: var(--sectionPadding);
-        margin-top: clamp(11.5rem, 20px, 0rem);
+        margin-top:0px;
         background-color: #fff;
         /* clips the wave background from causing overflow issues when it goes off screen */
         overflow: hidden;
@@ -384,13 +384,13 @@
 @media only screen and (min-width: 68rem) {
         #content-page-1401 {
         
-        margin-top: 100px;
+        margin-top: 0px;
         }
     }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
 
-    #content-page-1401 {      padding-top: 100px;}
+
 
     
     #content-page-1401 .cs-content {
@@ -415,8 +415,11 @@
                                 
 </style>
 
-
+<DIV style="margin-top: clamp(80px, 20px, 150px);">
+     {% include 'sections/cta_person.html' %}
+</DIV>
 <section id="content-page-1401">
+        
           <h1 class="cs-title">Buy a Home in <span class="cs-color">Metro Detroit</span> with Confidence</h1>
     <div class="cs-container">
 
