@@ -50,7 +50,7 @@
     }
     #content-page-1401 {
         padding: var(--sectionPadding);
-        padding-top: clamp(15.5rem, 20px, 0rem);
+        margin-top: clamp(11.5rem, 20px, 0rem);
         background-color: #fff;
         /* clips the wave background from causing overflow issues when it goes off screen */
         overflow: hidden;
@@ -85,7 +85,7 @@
         text-align: inherit;
         width: 100%;
         max-width: 100%;
-        margin: 0 0 1rem 0;
+        margin: 0 0 2rem 0;
         color: var(--headerColor);
         position: relative;
     }
@@ -357,6 +357,10 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+        #content-page-1401 {
+        padding: var(--sectionPadding);
+        margin-top: 100px;
+        }
     #content-page-1401 .cs-container {
         flex-direction: row;
         align-items: flex-start;
@@ -374,12 +378,18 @@
         display: flex;
         /* sends it to the right in the 2nd position */
         order: 2;
+       
     }
+
+     #content-page-1401 .cs-title {max-width: 1280px; margin: auto; margin-bottom: 50px;}
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
 
-    #content-page-1401 {      padding-top: 150px;}
+    #content-page-1401 {      padding-top: 50px;}
+
+      #content-page-1401 .cs-title { margin-bottom: 0px;}
+}
     #content-page-1401 .cs-content {
         width: 53%;
     }
@@ -404,7 +414,7 @@
 
 
 <section id="content-page-1401">
-          <h1 class="cs-title" style="max-width: 1280px; margin: auto;">Buy a Home in <span class="cs-color">Metro Detroit</span> with Confidence</h1>
+          <h1 class="cs-title">Buy a Home in <span class="cs-color">Metro Detroit</span> with Confidence</h1>
     <div class="cs-container">
 
   
