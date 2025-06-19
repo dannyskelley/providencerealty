@@ -48,9 +48,11 @@
             transform: translateY(0);
         }
     }
+
+    .sellPad {margin-top: 180px;}
     #content-page-1401 {
         padding: var(--sectionPadding);
-        margin-top:0px;
+        margin-top:10px;
         background-color: #fff;
         /* clips the wave background from causing overflow issues when it goes off screen */
         overflow: hidden;
@@ -357,7 +359,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-   
+       .sellPad {margin-top: 0px;}
     #content-page-1401 .cs-container {
         flex-direction: row;
         align-items: flex-start;
@@ -415,8 +417,8 @@
                                 
 </style>
 
-<DIV style="margin-top: clamp(80px, 20px, 150px);">
-        {% include 'components/homeworth.html' %}
+<DIV class="sellPad">
+        {% include 'components/homeworth.html' %}</DIV>
 <section id="content-page-1401">
   <h1 class="cs-title">Sell Your Home in <span class="cs-color">Metro Detroit</span> with Confidence and Top Results</h1>
   <div class="cs-container">
