@@ -1,0 +1,230 @@
+<!-- ============================================ -->
+<!--                   Quote                      -->
+<!-- ============================================ -->
+
+
+<style>
+    /* you can copy and paste this into your global stylesheet to be used everywhere there's a cs-topper in your site */
+ .cs-topper-special {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    position: relative;
+}
+ .cs-topper-special:before {
+    /* decorative line */
+    content: "";
+    /* 16px - 32px */
+    width: clamp(1rem, 3vw, 2rem);
+    height: 2px;
+    background: var(--secondary);
+    opacity: 1;
+    position: relative;
+    display: block;
+}
+
+                                
+</style>
+
+
+<style>
+    /*-- -------------------------- -->
+<---           Quote            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #quote-2185 {
+    padding: var(--sectionPadding);
+    /* 120px - 300px */
+    padding-top: 150px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+  }
+  #quote-2185 .cs-container {
+    width: 100%;
+    max-width: 82rem;
+    margin: auto;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+  #quote-2185 .cs-content {
+    /* set text align to center if content needs to be centrally aligned */
+    text-align: left;
+    width: 90%;
+    max-width: 46.125rem;
+    /* 32px - 48px top & bottom */
+    padding: clamp(2rem, 6vw, 2.5rem);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* aligns content to the left, set to center to centrally align */
+    align-items: flex-start;
+    position: relative;
+    bottom:-50px;
+    z-index: 10;
+  }
+  #quote-2185 .cs-content:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #quote-2185 .cs-quote {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    max-width: 62.5rem;
+    /* 32px - 48px */
+    margin: 0 0 clamp(2rem, 6vw, 3rem);
+    color: #fff;
+  }
+  #quote-2185 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+    display: block;
+  }
+  #quote-2185 .cs-job {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: #bababa;
+    display: block;
+  }
+  #quote-2185 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #quote-2185 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #quote-2185 .cs-content {
+    width: 50%;
+  }
+
+  .bigText {
+   font-size: 9rem;
+  }
+}
+                                
+</style>
+<!--                   
+    These "Micro Stitches" are to be placed inside the .cs-content group of Side By Side Stitches. This one is supposed to go on top of the cs-title. 
+-->
+
+<div id="quote-2185" class="cs-container" style=" max-width: 1400px; margin: auto;margin-bottom: 50px;"><span class="cs-topper-special">Featured</span>
+    <span class="cs-title bigText" >Listings</span>
+                                </div>
+<div id="quote-2185">
+    <div class="cs-container">
+       
+        <div class="cs-content">
+           <h2 class="cs-title" style="color:white">$169,900</h2>
+            <h3 class="cs-topper">23351 Redman Ct</h3>
+             <h3 class="cs-text" style="color: var(--primary);">Trenton, MI 48183</h3>
+            
+             <a style="margin-top: 30px;" href="/featured-listing" class="cs-button-solid">More info</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)"
+                srcset="/assets/images/featured1_1.jpg">
+        <source media="(min-width: 601px)"
+                srcset="/assets/images/featured1_1.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async"
+                src="/assets/images/featured1_1.jpg"
+                alt="wedding" width="360" height="316">
+    </picture>
+</div>
+         
+
+
+<div id="quote-2185">
+    <div class="cs-container" style="flex-direction: row;">
+       
+        <div class="cs-content" >
+           <h2 class="cs-title" style="color:white">$169,900</h2>
+            <h3 class="cs-topper">23351 Redman Ct</h3>
+             <h3 class="cs-text" style="color: var(--primary);">Trenton, MI 48183</h3>
+            
+             <a style="margin-top: 30px;" href="/featured-listing" class="cs-button-solid">More info</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)"
+                srcset="/assets/images/featured1_1.jpg">
+        <source media="(min-width: 601px)"
+                srcset="/assets/images/featured1_1.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async"
+                src="/assets/images/featured1_1.jpg"
+                alt="wedding" width="360" height="316">
+    </picture>
+</div>
+         
+<div id="quote-2185">
+    <div class="cs-container">
+       
+        <div class="cs-content">
+           <h2 class="cs-title" style="color:white">$169,900</h2>
+            <h3 class="cs-topper">23351 Redman Ct</h3>
+             <h3 class="cs-text" style="color: var(--primary);">Trenton, MI 48183</h3>
+            
+             <a style="margin-top: 30px;" href="/featured-listing" class="cs-button-solid">More info</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)"
+                srcset="/assets/images/featured1_1.jpg">
+        <source media="(min-width: 601px)"
+                srcset="/assets/images/featured1_1.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async"
+                src="/assets/images/featured1_1.jpg"
+                alt="wedding" width="360" height="316">
+    </picture>
+</div>
+

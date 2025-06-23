@@ -104,7 +104,7 @@
         height: 100%;
         width: 0%;
         background: #FFF;
-        opacity: 1;
+       
         top: 0;
         left: 0;
         z-index: -1;
@@ -342,4 +342,55 @@
     </div>
     
 </section>
-                                
+
+
+ 
+ <style>
+     #map {
+  
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #map .cs-title {color:white;}
+  #map .cs-container {
+    width: 100%;
+    padding: var(--sectionPadding);
+    max-width: 115rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 5vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #map .cs-content {
+    /* aligns text centrally. set to left to left-align text */
+    text-align: center;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centrally aligns items. set to flex-start to left-align items */
+    align-items: center;
+    z-index: 2;
+  }
+
+
+  @media only screen and (min-width: 44rem) {
+    #map .cs-container {width: 450px; position: absolute; top:30px; right:0px; padding-top:30px; padding-bottom:30px;
+  }
+}
+ </style>
+
+ <section id="map">
+ <!--Replace this embed code with the google maps embed code of your clients location. To do so, google your clients business, click on the map picture that in the profile card to go to the map location. That will take you to Google maps, then find the share button in the left panel and click on it. You will be given a link to share and a button to copy link, ignore that! AAbove that is a tab that says "Embed a map", click that instead and it will bring up the embed code for you clients location in maps.  Click the button to copy the html and paste it in place of this entire iframe tag. Do not keep the original iframe. Replace it with the new one you got from google maps, unless you want to display a map of Wyoming, then you can keep this iframe. -->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.861948938805!2d-83.26270042348183!3d42.13183854948899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b475b5e7e670d%3A0xb2fcab7728fb377c!2s23351%20Redman%20Ct%2C%20Brownstown%20Township%2C%20MI%2048183!5e0!3m2!1sen!2sus!4v1750710178317!5m2!1sen!2sus" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</section>
+        
+
+
