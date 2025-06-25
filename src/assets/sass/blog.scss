@@ -207,7 +207,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 100px auto;
+        margin: 150px auto;
         max-width:900px;
         width: 100%;
         padding: var(--sectionPadding);
@@ -530,6 +530,7 @@
         flex-direction: row;
         align-items: flex-start;
     }
+    #blog-listing {margin-top: 50px;}
 }
 
 /* Dark Mode */

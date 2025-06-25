@@ -51,9 +51,9 @@ permalink: "/blog/"
                                 <span aria-hidden="true" class="cs-dot"></span>
                                 <span class="cs-date">{{ post.date | postDate }}</span>
                             </div>
-                            <h2 class="cs-article-title">
+                            <a style="text-decoration: none;" href="{{ post.url }}"><h2 class="cs-article-title">
                                 {{ post.data.title }}
-                            </h2>
+                            </h2></a>
                             <p class="cs-article-desc">
                                 {{ post.data.description }}
                             </p>
@@ -66,4 +66,9 @@ permalink: "/blog/"
 
       
     </div>
+
+
+        {% include 'sections/cta.html' %}
+
 {% endblock %}
+
