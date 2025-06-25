@@ -1860,16 +1860,16 @@ button {
                     </li>
 
                                         <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown" tabindex="0">
-    <span class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }} cs-dropdown-toggle">
-        About
-    </span>
-    <ul class="cs-drop-ul">
-    
-   
-        <li class="cs-drop-li">
-            <a href="/victoria" class="cs-li-link cs-drop-link">Meet Victoria</a>
-        </li>
+                  <li class="cs-li cs-dropdown" tabindex="0">
+  <span class="cs-li-link {% if page.url and page.url.startsWith('/about/') %}cs-active{% endif %} cs-dropdown-toggle">
+      About
+  </span>
+  <ul class="cs-drop-ul">
+      <li class="cs-drop-li">
+          <a href="/about/victoriacamaj" class="cs-li-link cs-drop-link">Victoria Camaj</a>
+      </li>
+  </ul>
+</li>
     
     </ul>
 </li>
