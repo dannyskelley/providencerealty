@@ -220,13 +220,22 @@
             </div>
         </div>
         <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/bg1m.jpg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/bg1.jpg">
-            <img fetchpriority="high" decoding="async" src="/assets/images/bg1.jpg" alt="fancy modern architecture" width="1800" height="860">
-        </picture>
+       <picture class="cs-background">
+  <!-- Mobile Image -->
+  <source media="(max-width: 600px)" srcset="/assets/images/bg1m.jpg" type="image/jpeg">
+  
+  <!-- Tablet and above -->
+  <source media="(min-width: 601px)" srcset="/assets/images/bg1.jpg" type="image/jpeg">
+  
+  <img 
+    src="/assets/images/bg1.jpg" 
+    alt="fancy modern architecture" 
+    width="323" 
+    height="130" 
+    decoding="async" 
+    fetchpriority="high"
+  >
+</picture>
     </div>
 </section>
            
